@@ -3,9 +3,9 @@
   "trailingSlash": false,
   "redirects": [
     {
-      "source": "/:path*",
+      "source": "/(.*)",
       "has": [{ "type": "host", "value": "(?<sub>.+)\\.vercel\\.app" }],
-      "destination": "https://report.studycore.kr/:path*",
+      "destination": "https://report.studycore.kr/$1",
       "permanent": true
     }
   ]
